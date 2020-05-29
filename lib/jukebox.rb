@@ -36,9 +36,7 @@ def play(songs)
   songs.each do |e|
     if e.contains(input)
       puts "Playing #{e.slice()}"
-    else
-      puts "Invalid input, please try again"
     end
   end
-
+  puts "Invalid input, please try again"
 end
