@@ -47,3 +47,12 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+# run functional jukebox, using methods above
+def run
+  puts "Please enter a command:"
+  input = gets.strip
+
+  
+
+end
