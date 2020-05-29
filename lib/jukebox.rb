@@ -1,6 +1,6 @@
 # Add your code here
 
-songs = [
+juke_songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
   "Sufjan Stevens - Too Much",
@@ -19,4 +19,9 @@ def help
   puts "- list : displays a list of songs you can play"
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
+end
+
+# lists out songs in the jukebox with ordered list
+def list(songs)
+
 end
