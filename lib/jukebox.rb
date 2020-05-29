@@ -51,12 +51,12 @@ end
 # run functional jukebox, using methods above
 def run
   input = ""
+  
   until input == 'exit'
     puts "Please enter a command:"
     input = gets.strip
 
     case input
-
       when "help"
         help
       when "list"
@@ -65,7 +65,6 @@ def run
         play(juke_songs)
       when "exit"
         exit_jukebox
-
     end
 
   end
