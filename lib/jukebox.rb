@@ -28,7 +28,7 @@ def list(songs)
   end
 end
 
-#
-def play
-
+# asks user for a song, notifies and then exits if invalid
+def play(songs)
+  
 end
