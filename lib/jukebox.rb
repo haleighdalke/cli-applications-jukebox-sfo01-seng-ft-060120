@@ -33,9 +33,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
 
-  songs.each do |e|
-    if e.contains(input)
-      puts "Playing #{e.slice()}"
+  songs.each_with_index do |e, index|
+    if e.contains(input) or input.to_i == index+1
+      puts "Playing #{e}"
     end
   end
   puts "Invalid input, please try again"
