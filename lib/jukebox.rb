@@ -50,10 +50,11 @@ end
 
 # run functional jukebox, using methods above
 def run
-  puts "Please enter a command:"
-  input = gets.strip
-
+  input = ""
   until input == 'exit'
+    puts "Please enter a command:"
+    input = gets.strip
+    
 
   end
   exit_jukebox
