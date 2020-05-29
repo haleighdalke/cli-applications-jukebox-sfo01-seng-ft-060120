@@ -49,9 +49,9 @@ def exit_jukebox
 end
 
 # run functional jukebox, using methods above
-def run
+def run(songs)
   input = ""
-  
+
   until input == 'exit'
     puts "Please enter a command:"
     input = gets.strip
@@ -60,9 +60,9 @@ def run
       when "help"
         help
       when "list"
-        list(juke_songs)
+        list(songs)
       when "play"
-        play(juke_songs)
+        play(songs)
       when "exit"
         exit_jukebox
     end
