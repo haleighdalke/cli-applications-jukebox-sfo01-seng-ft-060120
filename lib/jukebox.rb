@@ -54,8 +54,19 @@ def run
   until input == 'exit'
     puts "Please enter a command:"
     input = gets.strip
-    
+
+    case input
+
+      when "help"
+        help
+      when "list"
+        list(juke_songs)
+      when "play"
+        play(juke_songs)
+      when "exit"
+        exit_jukebox
+
+    end
 
   end
-  exit_jukebox
 end
