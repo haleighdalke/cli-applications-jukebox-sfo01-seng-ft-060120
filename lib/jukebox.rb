@@ -34,7 +34,7 @@ def play(songs)
   input = gets.strip
 
   songs.each_with_index do |e, index|
-    if e.contains(input) or input.to_i == index+1
+    if e.include?(input) || input.to_i == index+1
       puts "Playing #{e}"
     end
   end
