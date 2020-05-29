@@ -23,5 +23,7 @@ end
 
 # lists out songs in the jukebox with ordered list
 def list(songs)
-
+  songs.each_with_index do |e, index|
+    puts "#{index+1}. #{e}"
+  end
 end
