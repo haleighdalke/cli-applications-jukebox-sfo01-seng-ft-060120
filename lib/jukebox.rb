@@ -30,5 +30,15 @@ end
 
 # asks user for a song, notifies and then exits if invalid
 def play(songs)
-  
+  puts "Please enter a song name or number:"
+  input = gets.strip
+
+  songs.each do |e|
+    if e.contains(input)
+      puts "Playing #{e.slice()}"
+    else
+      puts "Invalid input, please try again"
+    end
+  end
+
 end
