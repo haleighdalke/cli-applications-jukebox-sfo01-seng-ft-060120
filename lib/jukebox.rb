@@ -28,7 +28,7 @@ def list(songs)
   end
 end
 
-# asks user for a song, notifies and then exits if invalid
+# asks user for a song. If song is valid, prints song and returns true. If not, prints invalid and returns false
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
