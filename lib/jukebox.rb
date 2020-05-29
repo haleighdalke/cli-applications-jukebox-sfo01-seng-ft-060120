@@ -43,7 +43,7 @@ def play(songs)
   return false
 end
 
-#
+# prints Goodbye
 def exit_jukebox
   puts "Goodbye"
 end
